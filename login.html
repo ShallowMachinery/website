@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style-1.css">
+</head>
+<body>
+    <div class="background"></div>
+    <img src="images/s_logo_tr.png" alt="Menu" class="menu-icon" onclick="toggleSidebar()">
+    <div class="sidebar" id="sidebar">
+        <img src="images/menulogo.png" alt="Menu Logo" class="menu-logo" onclick="toggleSidebar()">
+        <ul class="main-menu">
+            <li><a href="#">Log In</a></li>
+        </ul>
+        <ul class="about-menu">
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+    <div class="login-container">
+        <h1>Log in to SQUEEZE</h1>
+        <form action="#" method="POST">
+            <div class="input-group">
+                <input type="text" id="username" name="username" placeholder="Username">
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" name="password" placeholder="Password" required>
+            </div>
+            <button type="submit">Log in</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

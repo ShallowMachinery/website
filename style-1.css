@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'MidfieldOblique';
+    src: url('assets/fonts/Midfield-Oblique.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans';
+    src: url('assets/fonts/PlusJakartaSans-VariableFont_wght.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'PlusJakartaSans', sans-serif;
+    background-color: #f0f0f0;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/bg-01.png');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    filter: brightness(0.9) contrast(1.2) opacity(0.5);
+}
+
+.login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    z-index: 1;
+}
+
+h1 {
+    margin-bottom: 70px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    top: 50%;
+    left: 10px;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 90%;
+    background-color: transparent;
+    padding: 10px;
+    border: 1.2px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #000000;
+}
+
+.input-group input:hover {
+    border-color: #000000;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    margin-top: 20px;
+    color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: #cccccc;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 250px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: left 0.3s ease;
+    z-index: 2;
+    padding: 20px;
+    color: white;
+}
+
+.menu-icon {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    width: 60px;
+    height: auto;
+    cursor: pointer;
+    z-index: 3;
+    transition: opacity 0.2s ease;  
+}
+
+.main-menu, .about-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.main-menu li, .about-menu li {
+    padding: 10px;
+    transition: background-color 0.1s ease;
+}
+
+.main-menu li a, .about-menu li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.main-menu li:hover, .about-menu li:hover {
+    background-color: #cccccc;
+}
+
+.about-menu {
+    position: absolute;
+    bottom: 50px;
+    left: 10;
+    width: 85%;
+}
+
+.menu-logo {
+    display: none; /* Initially hidden */
+    width: 230px;
+}
